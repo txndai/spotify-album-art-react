@@ -15,6 +15,7 @@ require('dotenv').config();
 
 var client_id = process.env.client_id; // Your client id
 var client_secret = process.env.client_secret; // Your secret
+console.log(process.env.client_id)
 var redirect_uri = 'http://localhost:8888/callback'; // Or Your redirect uri
 
 /**

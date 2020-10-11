@@ -98,13 +98,13 @@ class Form extends React.Component {
         </form>
 
         <div>
-          Track name: { this.state.nowPlaying.name }<br/>
-          
           {this.state.nowPlaying.artists.map(artist => (
-            <div key={artist.id}>
+            <span key={artist.id}>
               <span>{artist.name} </span>
-            </div>
+            </span>
           ))}
+           - { this.state.nowPlaying.name }<br/>
+          
           {this.state.track.albumArt.map(image => (
             <div key={image.url}>
               <img src={image.url} alt=''/>
