@@ -21,5 +21,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-*ignore.jsx
-auth-server/authorization_code/app.js
+
+node_modules/
+.env
+authorization_code/.env
