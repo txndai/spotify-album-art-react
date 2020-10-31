@@ -4,16 +4,20 @@
   "description": "Basic examples of the Spotify authorization flows through OAuth 2",
   "version": "0.0.1",
   "scripts": {
-    "server": "node app.js",
+    "server": "nodemon app.js",
     "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\"",
-    "client": "cd client && npm run dev"
+    "client": "cd client && npm run dev",
+    "client:build": "cd client && npm run build"
   },
   "dependencies": {
     "concurrently": "^5.3.0",
     "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "nodemon": "^2.0.6",
     "querystring": "~0.2.0",
     "request": "~2.34.0"
-  }
+  },
+
+  "proxy": "http://localhost:8888"
 }
