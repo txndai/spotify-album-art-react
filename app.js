@@ -42,7 +42,7 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(req, res) {
 
-  res.redirect('https://localhost:8888');
+  res.redirect('https://localhost:3000');
 
 });
 app.get('/login', function(req, res) {
